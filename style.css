@@ -1,0 +1,487 @@
+/* Основни стилове */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #023047;
+  color: #fff;
+}
+
+/* Хедър оферта */
+.top-offer {
+  background: #FFD60A;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+#countdown {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Навигационно меню */
+.navbar {
+  background: #023047;
+  padding: 15px 30px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; 
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  text-decoration: underline;
+  color: #FFD60A;
+}
+
+/* Hero секция */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background: #023047;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #FFD60A;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.hero-img img {
+  width: 300px;
+}
+
+/* Разделител между секции */
+.section-title {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* За нас */
+.about {
+  background: #023047;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-text strong {
+  color: #FFD60A;
+}
+
+.about-text em {
+  font-style: italic;
+}
+
+/* Дейности */
+.activities {
+  background: #023047;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.activities-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.activities-text {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.activities-video video {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  max-width: 100%;
+  width: 500px;
+}
+
+/* Новини */
+.news {
+  background: #023047;
+  padding: 60px 20px;
+  color: #fff;
+}
+.news-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.news-text {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.news-text strong {
+  color: #FFD60A;
+}
+.news-text em {
+  font-style: italic;
+}
+
+.news-img img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Контакти секция */
+.contacts {
+  background: #023047;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-around; 
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contacts-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contacts-column h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #FFD60A; 
+}
+
+.contacts-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-column ul li {
+  margin-bottom: 12px;
+}
+
+.contacts-column a {
+  text-decoration: none;
+  color: #fff; 
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.contacts-column a:hover {
+  color: #FFD60A;
+}
+
+.contacts-column p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contacts-column p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts-column p a:hover {
+  color: #FFD60A;
+}
+
+/* Адаптивност */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-img img {
+    margin-top: 20px;
+    width: 200px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .about-container,
+  .activities-container,
+  .news-container,
+  .contacts-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text,
+  .activities-text,
+  .news-text,
+  .contacts-column {
+    text-align: center;
+  }
+}
+/* За нас страница */
+.about-page {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 32px;
+  color: #023047;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.about-image {
+  margin-top: 30px;
+}
+
+.about-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+/* Локален стил за фон секцията */
+    .activities-hero {
+      background: url("images/deinosti.png") no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .activities-hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(2, 48, 71, 0.7);
+    }
+
+    .activities-hero .content {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    .activities-hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #FFD60A; /* акцент */
+    }
+
+    .activities-hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #fff;
+    }
+
+    .activities-image {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .activities-image img {
+      max-width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    /* Новини страница */
+.news-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+}
+
+.news-page h1 {
+  text-align: center;
+  color: #023047;
+  margin-bottom: 20px;
+}
+
+/* Слайдер */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: 30px auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #023047;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+/* Контактна страница */
+.contact-page {
+  background: url("images/kniga.png") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #023047;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #023047;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #FFD60A;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #023047;
+  color: #fff;
+}
+
+/* Footer стил */
+.contacts-footer {
+  background: #023047;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.contacts-footer .contacts-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contacts-footer h3 {
+  color: #FFD60A;
+  margin-bottom: 15px;
+}
+
+.contacts-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-footer ul li {
+  margin-bottom: 10px;
+}
+
+.contacts-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts-footer a:hover {
+  color: #FFD60A;
+}
